@@ -3,3 +3,45 @@
 	margin: 0px;
 	padding: 0px;
 }
+
+html {
+    font-family: "Helvetica", sans-serif;
+    font-size: 1.125rem;
+}
+
+.container {
+    max-width: 60rem;
+    margin: auto;
+}
+
+.flex {
+    display: flex;
+}
+
+nav {
+    height: 4rem;
+    align-items: center;
+
+}
+
+nav div {
+    height: 2rem;
+    align-items: center;  
+}
+
+nav img {
+    height: 2rem;
+    padding-left: 1.5rem;
+}
+
+nav span {
+    font-weight: 500;
+}
+
+#firstword {
+    color: black;
+}
+
+#secondword {
+    opacity: 0.3;
+}
