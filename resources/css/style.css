@@ -53,9 +53,21 @@ html {
 }
 
 h1 {
-    font-size: 3rem;
+    font-size: 2.5rem;
     font-weight: 900;
 }
+
+h2 {
+    font-size: 1.5rem;
+    font-weight: 900;
+}
+
+h3 {
+    font-size: 1rem;
+    font-weight: 900;
+}
+
+
 
 /* Header section */
 
@@ -147,7 +159,7 @@ nav li {
     justify-content: center;
     color: black;
     margin: 10% 0 10% 0;
-	max-width: 28rem;
+	max-width: 24rem;
 }
 
 .bannertext p {
@@ -212,9 +224,12 @@ nav li {
 
 .practicing h1 {
     margin-top: 2rem;
+    margin-bottom: 1.5rem;
 }
-practicing p {
-    margin-top: 1.5rem;
+
+.practicing p {
+    padding-top: 1.5rem;
+    padding-bottom: 2rem;
 }
 
 .events {
@@ -248,6 +263,7 @@ practicing p {
 .infotext {
     flex-direction: column;
     width: 65%;
+    padding-top: 8%;
 }
 
 @media only screen and (max-width: 450px) {
