@@ -11,51 +11,184 @@
 	<!-- Starting with the header  -->
 
 	<header>
-        <nav class="flex container">
-            <div class="flex">
+        <nav class="flex container desktop">
+            <div class="flex computer">
                 <img src="resources/images/ic-logo.svg" alt="logo"/>
                 <span id="firstword">COLMAR</span><span id="secondword">ACADEMY</span>
             </div>
-            <div class="menu">
+            <div class="flex menu">
                 <ul>
+                    <li>On campus</li>
+                    <li>Online</li>
+                    <li>For companies</li>
+                    <li>Sign in</li>
                 </ul>
+            </div>
+        </nav>
+                    
+        <!-- Header for mobile -->
+        
+        <nav class="flex container mobile">
+            <div class="flex mobile-menu">             
+                    <div><img src="resources/images/ic-logo.svg" /></div>
+                    <div><img src="resources/images/ic-on-campus.svg" /></div>
+                    <div><img src="resources/images/ic-online.svg" /></div>
+                    <div id="lastimg"><img src="resources/images/ic-login.svg" /></div>
             </div>
         </nav>
 	</header>
   
   <!-- Banner section -->
   
-	<div class="section" id="banner">
-		<div class="" id=""></div>
-		<div class="" id=""></div>
+	<div class="flex container banner">
+		<div class="bannerimg">
+            <img src="resources/images/banner.jpg" />
+        </div>
+		<div class="flex bannertext">
+            <h1>Learn something new everyday</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <div class="textsquare"><span>Start here</span></div>
+        </div>
 	</div>
 	
 	
 	<!-- Info section -->
 	
-	<div class="" id="">
-		<div class="" id=""></div>
-		<div class="" id=""></div>
+	<div class="flex container info">
+		<div class="flex practicing">
+			<div>
+				<img src="resources/images/information-main.jpg" alt="Studying man" />
+			</div>
+			<div>
+				<h2>It doesn't hurt to keep practicing</h2>
+				<p>"Curabitur vitae libero in ipsum porttitor consequat. Aliquam et commodo lectus, nec consequat neque. Sed non accumsan urna. Phasellus sed consequat ex. Etiam eget magna laoreet, efictur dolor consequat, tristique ligula."</p>
+				<p id="last">Emanuel, Sr Strategist at Hiring.com</p>
+			</div>
+		</div>
+		<div class="flex events">
+			<div class="flex eventbanner">
+				<div class="infoimg" id="orientation">
+					<img src="resources/images/information-orientation.jpg" alt="Orientation information" />
+				</div>
+				<div class="infotext">
+					<h2>Orientation date</h2>
+					<p>Tue 10/11 &amp; Wed 10/12: 8am-3pm</p>
+					<a href="#">Read more</a>
+				</div>
+			</div>
+			<div class="flex eventbanner">
+				<div class="infoimg" id="campus">
+					<img src="resources/images/information-campus.jpg" alt="Our campus" />
+				</div>
+				<div class="infotext">
+					<h2>Our campus</h2>
+					<p>Find which campus is close by you</p>
+					<a href="#">Read more</a>
+				</div>
+			</div>
+			<div class="flex" id="thirdimage">
+				<div class="infoimg" id="lecture">
+					<img src="resources/images/information-guest-lecture.jpg" alt="Our guest lecture" />
+				</div>
+				<div class="flex infotext">
+					<h2>Our guest lecture</h2>
+					<p>Join a keynote with Oliver Sack about music in medical treatment</p>
+					<p><a href="#">Read more</a></p>
+				</div>
+			</div>
+		</div>
 	</div>
 	
 	<!-- Start learning section -->
 	
-	<div class="" id="">
-		<div class="" id=""></div>
-		<div class="" id=""></div>
+	<div class="container learningstart">
+		<h1>Start learning</h1>
+		<div class="flex courses">
+			<div class="special">
+				<img src="resources/images/course-software.jpg" alt="Software course" />
+				<h2>Software engineering</h2>
+				<p class="subject">COURSES</p>
+				<p class="description">Web Development, Mobile Development, iOT, APIs</p>
+			</div>
+			<div class="special">
+				<img src="resources/images/course-computer-art.jpg" alt="Computer art course" />
+				<h2>Computer art</h2>
+				<p class="subject">COURSES</p>
+				<p class="description">Imaging &amp; Design, Web Design, Motion Graphics &amp; Visual Effects, Computer Animation</p>
+			</div>
+			<div class="special">
+				<img src="resources/images/course-design.jpg" alt="Design course" />
+				<h2>Design</h2>
+				<p class="subject">COURSES</p>
+				<p class="description">User Experience Design, User Research, Visual Design</p>
+			</div>
+			<div class="special">
+				<img src="resources/images/course-data.jpg" alt="Data course" />
+				<h2>Data</h2>
+				<p class="subject">COURSES</p>
+				<p class="description">Data Science, Big Data, SQL, Data Visualization</p>
+			</div>
+			<div class="special">
+				<img src="resources/images/course-business.jpg" alt="Business course" />
+				<h2>Business</h2>
+				<p class="subject">COURSES</p>
+				<p class="description">Product Development, Business Development, Startup</p>
+			</div>
+			<div class="special">
+				<img src="resources/images/course-marketing.jpg" alt="Marketing course" />
+				<h2>Marketing</h2>
+				<p class="subject">COURSES</p>
+				<p class="description">Analytics, Content Marketing, Mobile Marketing</p>
+			</div>
+		</div>
+		
 	</div>
 	
 	<!-- Exhibit section -->
 	
-	<div class="" id="">
-		<div class="" id=""></div>
-		<div class="" id=""></div>
+	<div class="container exhibit">
+		<h1>Thesis exhibit</h1>
+		<div class="flex cases">
+			<div class="video">
+				<video poster="resources/videos/index.png" onclick="this.play()">
+					<source src="resources/videos/thesis.mp4" type="video/mp4">
+					Your browser does not support the video tag.
+				</video>
+				<h2>Reimagine urban</h2>
+				<p>"Curabitur vitae libero in ipsum porttitor consequat. Aliquam et commodo lectus, nec consequat neque. Sed non accumsan urna. Phasellus sed consequat ex. Etiam eget magna laoreet, efictur dolor consequat, tristique ligula."</p>
+			</div>
+			<div class="flex prototype">				
+				<div class="flex fisma">
+					<div class="leftcol">
+						<img src="resources/images/thesis-fisma.jpg" alt="Design and Prototype" />
+					</div>
+					<div class="rightcol">
+						<h3>Fisma: Design and Prototype</h3>
+						<p>Designer showcase of new prototype product</p>
+					</div>
+				</div>
+				<div class="flex">
+					<div class="leftcol">
+						<img src="resources/images/thesis-now-and-then.jpg" alt="Now and then" />
+					</div>
+					<div class="rightcol">
+						<h3>Now and then</h3>
+						<p>Research study about New Yourk</p>
+					</div>
+				</div>		
+			</div>
+		</div>
 	</div>
 	
 	<!-- Footer section -->
 	
-	<footer>
-	
+	<footer class="flex container">
+		<div>
+			<p>&copy; 2016 Colmar Academy. All rights reserved</p>
+		</div>
+		<div>
+			<span>Terms Privacy</span>
+		</div>	
 	</footer>
 	
 </body>
