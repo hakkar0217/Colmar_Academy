@@ -59,7 +59,7 @@ h1 {
 
 h2 {
     font-size: 1.5rem;
-    font-weight: 900;
+    font-weight: 500;
 }
 
 h3 {
@@ -141,7 +141,7 @@ nav li {
 /* Banner section */
 
 .banner {
-    background-color: #cfcfcf;
+    background-color: rgb(224,224,224);
 }
 
 .bannerimg {
@@ -196,12 +196,26 @@ nav li {
     }
     
     .bannertext {
-        margin: 2rem 0 0 1rem;
+        padding: 2rem 1rem 2rem 1rem;
+        max-width: 100%;
+        margin: 0 0;
+    }
+    
+    .bannertext h1 {
+        font-size: 3rem;
+    }
+
+    .bannertext p {
+    font-size: 2rem;
+    font-weight: 700;
+    padding-top: 1.5rem;
+    line-height: 1.2;
     }
     
     .textsquare {
         background-color: darkgray;
         margin-top: 1.5rem;
+        margin-right: 0;
     }
 }
 
@@ -226,9 +240,15 @@ nav li {
     margin-top: 2rem;
     margin-bottom: 1.5rem;
 }
+.practicing span {
+    line-height: 1.5;
+    font-size: 1.1rem;
+}
 
 .practicing p {
-    padding-top: 1.5rem;
+    font-size: 0.75rem;
+    font-weight: 700;
+    padding-top: 2rem;
     padding-bottom: 2rem;
 }
 
@@ -236,19 +256,13 @@ nav li {
 	flex-direction: column;
 	width: 40%;
 	height: auto;
+    margin-top: 1rem;
+    border-left: 1px solid rgb(224,224,224);
 }
 
 .infoimg {
     width: 35%;
-    padding: 1rem; 1rem;
-}
-
-#orientation img {
-    padding-top: 1rem;
-}
-
-#campus img {
-
+    padding: 1rem 1rem;
 }
 
 .infoimg img {
@@ -256,8 +270,12 @@ nav li {
     height: auto;
 }
 
+.infoimg .mobileimg {
+    display: none;
+}
+
 #thirdimage {
-    background-color: #cfcfcf;
+    background-color: rgb(224,224,224);
 }
 
 .infotext {
@@ -266,9 +284,77 @@ nav li {
     padding-top: 8%;
 }
 
+.infotext span {
+    padding-top: 0.5rem;
+}
+
+.infotext p {
+    padding-top: 0.5rem;
+    color: deepskyblue;
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+
 @media only screen and (max-width: 450px) {
-    .info {
+    .practicing {
+        display: none;
+    }
+    
+    .events {
         flex-direction: column;
+        width: 100%;
+        height: auto;
+        margin-top: 0;
+        border-left: none;
+        padding: 1rem 1rem 1rem 1rem;
+    }
+    
+    .eventbanner {
+        flex-direction: column;
+        width: 100%;
+        padding-bottom: 4rem;
+    }
+    
+    .infoimg {
+        width: 100%;
+        padding: 0 0;
+    }
+    
+    .infoimg .desktop {
+        display: none;
+    }
+    
+    .infoimg .mobileimg {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+    
+    #thirdimage {
+        flex-direction: column;
+        background-color: white;
+    }
+
+    .infotext {
+        flex-direction: column;
+        width: 65%;
+        padding-left: 1rem;
+    }
+
+    .infotext span {
+        padding-top: 0.5rem;
+    }
+
+    .infotext p {
+        padding-top: 0.5rem;
+        color: deepskyblue;
+        font-weight: 500;
+        font-size: 1rem;
+    }
+    
+    #thirdimage {
+        padding-bottom: 1rem;
     }
 }
 
@@ -276,7 +362,7 @@ nav li {
 /* Start learning section */
 
 .learningstart {
-    background-color: #cfcfcf;
+    background-color: rgb(224,224,224);
 }
 
 .learningstart h1 {
@@ -300,6 +386,46 @@ nav li {
     max-width: 100%;
 }
 
+.special h2 {
+    padding: 1rem 1rem 0 0;
+}
+
+.special p {
+    font-size: 1.1rem;
+    padding: 1rem 0.5rem 0 0;
+}
+
+.mobiletext {
+    display: none;
+}
+
+@media only screen and (max-width: 450px) {
+    .learningstart {
+        background-color: white;
+    }
+    
+    .courses {
+        flex-direction: column;
+        padding: 1rem 1rem 1.75rem 1rem;
+        flex-wrap: nowrap;
+    }
+    
+    .special {
+        display: none;
+    }
+    
+    .courses .mobiletext {
+        background-color: rgb(224,224,224);
+        display: inline;
+        font-size: 3rem;
+        font-weight: 900;
+        padding: 1rem 0 1.5rem 1rem;
+        margin-bottom: 0.5rem;
+    }
+    
+    
+}
+
 /* Exhibit section */
 
 .exhibit {
@@ -311,13 +437,24 @@ nav li {
     text-align: center;
 }
 
-.video {
+.media {
     width: 60%;
     padding: 2rem 1.5rem 1.5rem 1.5rem;
 }
 
-.video video {
+.media video {
     width: 100%;
+}
+
+.media h2 {
+    padding-top: 1.5rem;
+}
+
+.media p {
+    padding-top: 0.5rem;
+    padding-bottom: 2rem;
+    line-height: 1.5;
+    font-size: 1.1rem;
 }
 
 .prototype {
@@ -326,8 +463,9 @@ nav li {
     padding-top: 2rem;
 }
 
+
 .fisma {
-    background-color: #cfcfcf;
+    background-color: rgb(224,224,224);
 }
 
 .leftcol {
@@ -340,9 +478,30 @@ nav li {
     padding-left: 0.5rem;
 }
 
+.rightcol h3 {
+    padding-top: 20%;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.rightcol p {
+    padding-top: 1rem;
+}
+
 .prototype img {
     width: 100%;
     height:auto;
+}
+
+@media only screen and (max-width: 450px) {
+    .prototype, .media h2, .media p {
+        display: none;
+    }
+    
+    .media {
+        width: 100%;
+        padding: 1rem 0 1.5rem 0;
+    }
 }
 
 /* Footer section */
@@ -350,8 +509,24 @@ nav li {
 footer {
     justify-content: space-between;
     padding-top: 1rem;
+    height: 3.5rem;
+    border-top: 1px solid rgb(224,224,224);
 }
 
 footer p {
     padding-left: 1.5rem;
+}
+
+@media only screen and (max-width:450px) {
+    footer {
+        border-top: none;
+        height: auto;
+        padding-bottom: 1rem;
+    }
+    
+    footer span {
+        display: none;
+
+
+    }
 }
